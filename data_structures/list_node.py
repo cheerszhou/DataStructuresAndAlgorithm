@@ -3,6 +3,11 @@ class ListNode:
         self.data = data
         self.next = None
 
+    def __lt__(self, other):
+        if isinstance(other, ListNode):
+            return self.data < other.data
+        return NotImplemented
+
     @classmethod
     def fromList(cls, array: list):
         if not array:

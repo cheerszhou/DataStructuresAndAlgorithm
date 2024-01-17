@@ -29,8 +29,8 @@ def mergeTwoList(l1: ListNode, l2: ListNode) -> ListNode:
 
 
 if __name__ == '__main__':
-    l1 = ListNode.fromList([1, 2, 4])
-    l2 = ListNode.fromList([1, 3, 4])
-    l = mergeTwoList(l1, l2)
-    print(l.toString())
-    print(l.toList())
+    ordered_l1 = ListNode.fromList([-1, 2, 4])
+    ordered_l2 = ListNode.fromList([1, 13, 20])
+    ordered_l = mergeTwoList(ordered_l1, ordered_l2)
+    print(ordered_l.toString())
+    print(ordered_l.toList())
