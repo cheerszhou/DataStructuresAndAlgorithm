@@ -23,6 +23,12 @@ class ListNode:
 
         return head
 
+    def trail(self):
+        trail = self
+        while trail.next:
+            trail = trail.next
+        return trail
+
     def toString(self):
         if not self:
             return 'ListNode:null'
