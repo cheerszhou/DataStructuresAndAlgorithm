@@ -15,7 +15,7 @@ def hasCycle(head: ListNode) -> bool:
 
 
 if __name__ == '__main__':
-    head = ListNode.fromList([2,3,-1,2])
+    head = ListNode.fromList([2, 3, -1, 2])
     trail = head.trail()
     # trail.next = head
     print(trail.toList())
