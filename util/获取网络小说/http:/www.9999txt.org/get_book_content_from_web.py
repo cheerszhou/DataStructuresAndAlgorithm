@@ -18,12 +18,12 @@ def get_book_content_from_web(book_url, book_name):
     # 写入文件
     with open(f'{catalog.get_desktop_path_byPath()}/{book_name}.txt', 'a', encoding='utf-8') as file:
         for key, value in json_dict.items():
-            file.write(f'{key}\n\n\n')
+            file.write(f'{key}\n\n')
             lines = chapter.get_chapter_content_from_url(value)
             # for line_text in lines:
             #     file.write(line_text)
             file.writelines(lines)
-            file.write('\n\n')
+            file.write('\n')
             print(f'{key} 写入完成!')
 
 
